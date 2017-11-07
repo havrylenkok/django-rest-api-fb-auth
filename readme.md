@@ -1,8 +1,8 @@
 `cd instagramauthdemo`
 
-`psql
+`psql`
 
-create database instagramauthdemo;`
+`create database dbname;`
 
 `mkvirtualenv instagramauthdemo
 workon instagramauthdemo`
@@ -17,7 +17,7 @@ DEBUG = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'instagramauthdemo',
+        'NAME': 'dbname',
         'USER': '',
         'PASSWORD': '',
         'HOST': '127.0.0.1',
