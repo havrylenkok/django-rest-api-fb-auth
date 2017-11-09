@@ -1,15 +1,15 @@
-`cd instagramauthdemo`
+`cd djangorestapifbauth`
 
 `psql`
 
 `create database dbname;`
 
-`mkvirtualenv instagramauthdemo
-workon instagramauthdemo`
+`mkvirtualenv djangorestapifbauth
+workon djangorestapifbauth`
 
 `pip install -r requirements.txt`
 
-create instagramauthdemo/settings_local.py with database connection info:
+create djangorestapifbauth/settings_local.py with database connection info:
 ~~~~~
 
 DEBUG = True
@@ -25,9 +25,11 @@ DATABASES = {
     }
 }
 
-# Facebook configuration
-SOCIAL_AUTH_FACEBOOK_KEY = ''
-SOCIAL_AUTH_FACEBOOK_SECRET = ''
+# IG configuration
+SOCIAL_AUTH_INSTAGRAM_KEY = ''
+SOCIAL_AUTH_INSTAGRAM_SECRET = ''
+
+ALLOWED_HOSTS = ['localhost']
 
 ~~~~~~
 
