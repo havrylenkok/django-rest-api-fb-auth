@@ -148,6 +148,8 @@ AUTHENTICATION_BACKENDS = (
 
 SOCIAL_AUTH_INSTAGRAM_AUTH_EXTRA_ARGUMENTS = {'scope': 'basic'}
 
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/hello/'
+
 try:
     from djangorestapifbauth.settings_local import *
 except:
